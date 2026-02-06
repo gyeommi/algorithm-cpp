@@ -2,26 +2,18 @@
 #include <string>
 using namespace std;
 
-int main()
-{
-    int n;
+int main() {
     string s;
+    int n = 0, result, cnt;
     cin >> n;
-
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         cin >> s;
-        int re = 0, cnt = 0;
-        for (int j = 0; j < s.length(); j++)
-        {
-            if (s[j] == 'O')
-                cnt++;
-            else
-                cnt = 0;
-            re += cnt;
-        }
-        cout << re << "\n";
+        result = 0, cnt = 1;
+        for (int j = 0; j < s.length(); j++) {
+			if (s[j] == 'O') result += cnt++;
+			else if (s[j] == 'X') cnt = 1;
+		}
+        cout << result << '\n';
     }
-
     return 0;
 }

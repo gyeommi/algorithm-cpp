@@ -4,13 +4,15 @@
 using namespace std;
 
 int solution(int n) {
-    int answer = 0;
+    if (n < 2) return 0;
     
-    for(int i = 2; i <= n; i++)
+    int answer = 1; // 2는 미리 포함
+    
+    for (int i = 3; i <= n; i += 2)
     {
         bool isPrime = true;
         
-        for (int j = 2; j*j <= i; j++)
+        for (int j = 3; j * j <= i; j += 2)
         {
             if (i % j == 0)
             {

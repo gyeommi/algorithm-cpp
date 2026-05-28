@@ -1,10 +1,10 @@
 # [level 0] 7의 개수 - 120912 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120912?language=cpp) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120912?language=csharp) 
 
 ### 성능 요약
 
-메모리: 4.02 MB, 시간: 0.01 ms
+메모리: 31 MB, 시간: 0.34 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2026년 03월 26일 12:33:51
+2026년 05월 28일 15:03:21
 
 ### 문제 설명
 
